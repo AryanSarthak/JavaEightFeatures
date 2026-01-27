@@ -9,10 +9,10 @@ public class Main {
         service.addContact(new Contact("Ravi","Sharma","Mumbai","MH","400001"));
         service.addContact(new Contact("Neha","Singh","Delhi","Delhi","110002"));
 
-        System.out.println("Search City Delhi:");
+        System.out.println("Search Contacts in City Delhi:");
         service.searchByCity("Delhi").forEach(System.out::println);
 
-        System.out.println("Count Delhi: " + service.countByCity("Delhi"));
+        System.out.println("Count Contacts in Delhi: " + service.countByCity("Delhi"));
 
         System.out.println("Sort By Name:");
         service.sortByName().forEach(System.out::println);
